@@ -1,0 +1,241 @@
+body
+{
+    font-family: "Anton";
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    overflow: hidden ;
+
+}
+
+h1
+{
+    color: white;
+    background-color: balack;
+    font-size: 50px;
+    width: 100%;
+    margin: 0;
+    
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(46, 255, 151, 0.8);
+    
+    z-index: 1000;
+}
+.h2-cont
+{
+    position: relative;
+    bottom: 0;
+    text-align: center;
+
+}
+h2
+{
+    color: white;
+    background-color: black;
+    text-shadow: 2px 2px 5px rgba(46, 255, 151, 0.8);
+    font-size: 40px;
+    display: grid;
+    grid-column: 2 / 4;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    bottom: 100%;
+    text-wrap: nowrap;
+    width: 100vw;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+
+.content
+{   
+    display: grid;
+    grid-template-columns: 25% 40% 35%;
+    grid-template-rows: auto 1fr auto; 
+    height: calc(100vh - 85px);
+    padding: 0;
+    gap: 0;
+    box-sizing: border-box;
+}
+.menu
+{
+    background: linear-gradient(rgb(255, 187, 240), rgb(53, 255, 221));
+    font-size: 35px;
+    padding: 10px;
+    border: solid black;
+    border-width: 5px;
+    border-top: 0;
+    overflow: hidden; 
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height: calc(100vh - 100px);
+    border-bottom: 0;
+    box-sizing: border-box;
+
+    position: relative;
+    flex-shrink: 0;
+
+    ul li::marker
+    {
+        color: rgb(41, 36, 36);
+    }
+
+    a:link
+    {
+        color: rgb(98, 38, 104);
+    }
+    a:visited
+    {
+        color: rgb(33, 155, 155);
+    }
+    a:hover
+    {
+        color:rgb(95, 255, 228);
+    }
+    a:active
+    {
+        color:rgb(22, 5, 71);
+    }
+
+}
+
+.mainPic {
+    display: flex;
+    position: relative;
+    height: calc(100vh - 140px);
+}
+#main {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    left: 0;
+}
+
+.other
+{
+    width: 100%;
+    height: calc(100vh - 130px);
+    display: flex;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#text
+{
+    height: 100%;
+    font-size: 30px;
+    width: 100%;
+    background: linear-gradient(rgb(53, 255, 221), rgb(255, 187, 240));
+    color:black;
+    padding: 20px;
+    box-sizing: border-box;
+    flex:1;
+    display: flex;
+    position: relative;
+    left: 0;
+    border: solid black;
+
+    align-items: center ;
+    flex-wrap: nowrap;
+    
+    border-width: 5px;
+    border-top: 0;
+    border-bottom: 4px;
+    flex-shrink: 1;
+}
+
+#giraffe
+{
+    display: flex;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    box-sizing: border-box;
+    justify-content: space-between;
+    border: solid black;
+    border-width: 5px;
+    border-top: 0;
+    border-bottom: 0;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1300px) {
+    
+    .h1{
+        font-size: 45px;
+        height: 10%;
+        padding: 0 0 0 10%;
+        display: flex;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 28px; 
+        padding-left: 0;
+       
+    }
+ 
+
+    .menu {
+        font-size: large;
+        padding: 5px;
+        width: 100%;
+        word-wrap: break-word;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+    
+    .mainPic {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    
+    #main {
+        max-width: 100%; 
+        height: auto;
+        box-sizing: border-box;
+        display: block;
+        margin: 0 auto;
+    }
+    .other
+    {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #text {
+        font-size: medium;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: nowrap;
+        word-wrap: break-word;
+        height: 60%;
+        position: relative;
+        overflow: auto;
+    }
+    #giraffe
+    {
+        width: 100%;
+        height: auto;
+    }
+}
